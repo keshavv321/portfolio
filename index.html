@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -17,7 +18,13 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#readiness">Readiness</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li>
+                <div class="theme-toggle" id="theme-toggle" title="Toggle Theme">
+                    <i class="bi bi-brightness-high" id="theme-icon"></i>
+                </div>
+            </li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -25,6 +32,9 @@
             <div class="line3"></div>
         </div>
     </nav>
+
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-outline"></div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -36,6 +46,7 @@
                 <div class="hero-buttons">
                     <a href="#contact" class="btn primary-btn">Contact Me</a>
                     <a href="#projects" class="btn secondary-btn">View Work</a>
+                    <!-- <a href="#" class="btn outline-btn" id="resume-download"><i class="bi bi-download"></i> Resume</a> -->
                 </div>
             </div>
             <div class="hero-image">
@@ -73,9 +84,10 @@
                                 <h4>Full Stack Development</h4>
                                 <p>Academy for Careers in Technology / Edunet Foundation | 08/2025 - Current</p>
                                 <ul>
-                                    <li>Front-End Development</li>
-                                    <li>Back-End Development</li>
-                                    <li>Full Stack Web Development</li>
+                                    <li>Architecting responsive and high-performance front-end interfaces.</li>
+                                    <li>Developing scalable back-end logic and API integrations.</li>
+                                    <li>Managing relational databases and optimizing query performance.</li>
+                                    <li>Collaborating on version-controlled projects using Git.</li>
                                 </ul>
                             </div>
                         </div>
@@ -213,7 +225,10 @@
                             <span>CSS</span>
                             <span>JavaScript</span>
                         </div>
-                        <a href="https://keshavaram.weebly.com" target="_blank" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                        <div class="project-actions">
+                            <a href="https://keshavaram.weebly.com/ai-model.html" target="_blank" class="project-link"><i class="bi bi-eye"></i> Live Demo</a>
+                            <a href="#" class="project-link github-link"><i class="bi bi-github"></i> Source</a>
+                        </div>
                     </div>
                 </div>
                 <div class="project-card">
@@ -227,10 +242,42 @@
                             <span>Python</span>
                             <span>SQL</span>
                         </div>
-                        <a href="https://vikrammaduri95-sudo.github.io/RURAL-GOVERNANCE-PROJECT/" target="_blank" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                        <div class="project-actions">
+                            <a href="https://vikrammaduri95-sudo.github.io/RURAL-GOVERNANCE-PROJECT/" target="_blank" class="project-link"><i class="bi bi-eye"></i> Live Demo</a>
+                            <a href="#" class="project-link github-link"><i class="bi bi-github"></i> Source</a>
+                        </div>
                     </div>
                 </div>
                 
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Readiness Section -->
+    <section id="readiness" class="readiness reveal">
+        <div class="container">
+            <h2 class="section-title">Professional Readiness</h2>
+            <div class="readiness-grid">
+                <div class="readiness-card">
+                    <i class="bi bi-people-fill"></i>
+                    <h3>Team Collaboration</h3>
+                    <p>Proficient in Git/GitHub workflows, pull requests, and code reviews. Committed to effective communication in a team environment.</p>
+                </div>
+                <div class="readiness-card">
+                    <i class="bi bi-code-slash"></i>
+                    <h3>Industry Standards</h3>
+                    <p>Writing clean, maintainable, and semantic code following DRY and SOLID principles to ensure long-term project scalability.</p>
+                </div>
+                <div class="readiness-card">
+                    <i class="bi bi-lightning-charge-fill"></i>
+                    <h3>Agile Adaptability</h3>
+                    <p>Fast learner capable of pivoting between technologies and adapting to internal tools and fast-paced development cycles.</p>
+                </div>
+                <div class="readiness-card">
+                    <i class="bi bi-shield-check"></i>
+                    <h3>Work Reliability</h3>
+                    <p>Consistent in meeting deadlines, delivering high-quality documentation, and maintaining professional integrity in all tasks.</p>
+                </div>
             </div>
         </div>
     </section>
