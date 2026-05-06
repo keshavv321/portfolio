@@ -88,6 +88,25 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     transition: background-color 0.4s ease, background-image 0.4s ease;
+    animation: backgroundShift 15s ease-in-out infinite;
+}
+
+@keyframes backgroundShift {
+    0% {
+        background-image:
+            radial-gradient(circle at 15% 50%, rgba(59, 130, 246, 0.04) 0%, transparent 40%),
+            radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.04) 0%, transparent 40%);
+    }
+    50% {
+        background-image:
+            radial-gradient(circle at 25% 60%, rgba(59, 130, 246, 0.06) 0%, transparent 40%),
+            radial-gradient(circle at 75% 40%, rgba(139, 92, 246, 0.06) 0%, transparent 40%);
+    }
+    100% {
+        background-image:
+            radial-gradient(circle at 15% 50%, rgba(59, 130, 246, 0.04) 0%, transparent 40%),
+            radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.04) 0%, transparent 40%);
+    }
 }
 
 .container {
