@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
             customCursorOutline.style.opacity = '0';
         });
 
-        const interactiveElements = document.querySelectorAll('a, button, .btn, .theme-toggle, .social-btn, .project-link, .submit-btn');
+        const interactiveElements = document.querySelectorAll('a, button, .btn, .theme-toggle, .social-btn, .project-link, .submit-btn, .nav-resume');
         interactiveElements.forEach(el => {
             el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
             el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
